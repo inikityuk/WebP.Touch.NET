@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Demo.NET</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.xxx.xxx</string>
+	<string>com.companyname.Demo</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>

@@ -25,7 +25,7 @@
 		<file src="WebP.Touch/WebP.Touch/bin/Release/net7.0-ios/WebP.Touch.dll" target="lib/net7.0-ios16.1/WebP.Touch.dll" />
 		<file src="WebP.Touch/WebP.Touch/bin/Release/WebP.Touch.xml" target="lib/net7.0-ios16.1/WebP.Touch.xml" />
 		<!--Mac-->
-		<file src="WebP.Mac/WebP.Mac/bin/Release/net7.0-macos/WebP.Mac.dll" target="lib/net7.0-macos/Xamarin.Mac20/WebP.Mac.dll" />
+		<file src="WebP.Mac/WebP.Mac/bin/Release/net7.0-macos/WebP.Mac.dll" target="lib/net7.0-macos13.0/WebP.Mac.dll" />
 		<!-- <file src="WebP.Mac/WebP.Mac/bin/Release/WebP.Mac.xml" target="lib/Xamarin.Mac20/WebP.Mac.xml" />         -->
 	</files>
 </package>
