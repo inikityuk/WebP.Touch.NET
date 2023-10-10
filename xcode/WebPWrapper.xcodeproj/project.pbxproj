@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96CD59CF1ADFB187009FABC4 /* WebPDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96CD59CE1ADFB187009FABC4 /* WebPDecoder.h */; };
+		96CD59D11ADFB187009FABC4 /* WebPDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD59D01ADFB187009FABC4 /* WebPDecoder.m */; };
+		96D366B91B1345D70026FE4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D366B81B1345D70026FE4A /* UIKit.framework */; };
+		96D366BB1B1345E00026FE4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D366BA1B1345E00026FE4A /* CoreGraphics.framework */; };
+		96D366BD1B1345F70026FE4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D366BC1B1345F70026FE4A /* Foundation.framework */; };
+		96D366BF1B13460C0026FE4A /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D366BE1B13460C0026FE4A /* WebP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96CD59C91ADFB187009FABC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				96CD59CF1ADFB187009FABC4 /* WebPDecoder.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		96CD59CB1ADFB187009FABC4 /* libWebPWrapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWebPWrapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96CD59CE1ADFB187009FABC4 /* WebPDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPDecoder.h; sourceTree = "<group>"; };
+		96CD59D01ADFB187009FABC4 /* WebPDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebPDecoder.m; sourceTree = "<group>"; };
+		96D366B81B1345D70026FE4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96D366BA1B1345E00026FE4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96D366BC1B1345F70026FE4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96D366BE1B13460C0026FE4A /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = WebPWrapper/WebP.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96CD59C81ADFB187009FABC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D366BF1B13460C0026FE4A /* WebP.framework in Frameworks */,
+				96D366BD1B1345F70026FE4A /* Foundation.framework in Frameworks */,
+				96D366BB1B1345E00026FE4A /* CoreGraphics.framework in Frameworks */,
+				96D366B91B1345D70026FE4A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96CD59C21ADFB186009FABC4 = {
+			isa = PBXGroup;
+			children = (
+				96CEC9B11B12931A007314E2 /* Frameworks */,
+				96CD59CD1ADFB187009FABC4 /* WebPWrapper */,
+				96CD59CC1ADFB187009FABC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96CD59CC1ADFB187009FABC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96CD59CB1ADFB187009FABC4 /* libWebPWrapper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96CD59CD1ADFB187009FABC4 /* WebPWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				96CD59CE1ADFB187009FABC4 /* WebPDecoder.h */,
+				96CD59D01ADFB187009FABC4 /* WebPDecoder.m */,
+			);
+			path = WebPWrapper;
+			sourceTree = "<group>";
+		};
+		96CEC9B11B12931A007314E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96D366BE1B13460C0026FE4A /* WebP.framework */,
+				96D366BC1B1345F70026FE4A /* Foundation.framework */,
+				96D366BA1B1345E00026FE4A /* CoreGraphics.framework */,
+				96D366B81B1345D70026FE4A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96CD59CA1ADFB187009FABC4 /* WebPWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96CD59DF1ADFB187009FABC4 /* Build configuration list for PBXNativeTarget "WebPWrapper" */;
+			buildPhases = (
+				96CD59C71ADFB187009FABC4 /* Sources */,
+				96CD59C81ADFB187009FABC4 /* Frameworks */,
+				96CD59C91ADFB187009FABC4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebPWrapper;
+			productName = WebPWrapper;
+			productReference = 96CD59CB1ADFB187009FABC4 /* libWebPWrapper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96CD59C31ADFB187009FABC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Cosmin G";
+				TargetAttributes = {
+					96CD59CA1ADFB187009FABC4 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 96CD59C61ADFB187009FABC4 /* Build configuration list for PBXProject "WebPWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96CD59C21ADFB186009FABC4;
+			productRefGroup = 96CD59CC1ADFB187009FABC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96CD59CA1ADFB187009FABC4 /* WebPWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96CD59C71ADFB187009FABC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CD59D11ADFB187009FABC4 /* WebPDecoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		96CD59DD1ADFB187009FABC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96CD59DE1ADFB187009FABC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96CD59E01ADFB187009FABC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebPWrapper",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		96CD59E11ADFB187009FABC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WebPWrapper",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96CD59C61ADFB187009FABC4 /* Build configuration list for PBXProject "WebPWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CD59DD1ADFB187009FABC4 /* Debug */,
+				96CD59DE1ADFB187009FABC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96CD59DF1ADFB187009FABC4 /* Build configuration list for PBXNativeTarget "WebPWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96CD59E01ADFB187009FABC4 /* Debug */,
+				96CD59E11ADFB187009FABC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96CD59C31ADFB187009FABC4 /* Project object */;
+}
