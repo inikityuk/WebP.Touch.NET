@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>WebP.Touch.NET</id>
+       <id>WebPDecoder.Touch.NET</id>
        <version>1.0.0</version>
        <title>.NET iOS/Mac bindings to decode WebP file format</title>
        <authors>Daniel Luberda, Molinet Fabien, Cosmin Gordea, Igor Nikityuk</authors>
