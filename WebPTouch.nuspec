@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>WebPDecoder.Touch.NET</id>
-       <version>1.0.0</version>
-       <title>.NET iOS/Mac bindings to decode WebP file format</title>
-       <authors>Daniel Luberda, Molinet Fabien, Cosmin Gordea, Igor Nikityuk</authors>
-       <projectUrl>https://github.com/inikityuk/WebP.Touch.NET</projectUrl>
-       <requireLicenseAcceptance>false</requireLicenseAcceptance>
-       <description>
+        <id>WebPDecoder.Touch.NET</id>
+        <version>1.0.1</version>
+        <title>.NET iOS/Mac bindings to decode WebP file format</title>
+        <authors>Daniel Luberda, Molinet Fabien, Cosmin Gordea, Igor Nikityuk</authors>
+        <projectUrl>https://github.com/inikityuk/WebP.Touch.NET</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
        	 .NET iOS/Mac bindings to decode WebP file format. 
-       </description>
-       <summary>.NET iOS/Mac bindings to decode WebP file format.</summary>
-       <tags>xamarin, ios, mac, webp, image, google</tags>
-       <dependencies>
-       </dependencies>
+        </description>
+        <summary>.NET iOS/Mac bindings to decode WebP file format.</summary>
+        <tags>xamarin, ios, mac, webp, image, google</tags>
         <readme>README.md</readme>
         <license type="file">LICENSE</license>
-   </metadata>
+        <dependencies>
+            <group targetFramework="net8.0-ios17.2">
+            </group>
+            <group targetFramework="net8.0-macos14.2">
+            </group>
+        </dependencies>
+    </metadata>
 	<files>
         <file src="README.md" target="README.md"/>
         <file src="LICENSE" target="LICENSE"/>
 		
         <!--Xamarin.iOS Unified-->
-		<file src="WebP.Touch/WebP.Touch/bin/Release/net7.0-ios/WebP.Touch.dll" target="lib/net7.0-ios16.1/WebP.Touch.dll" />
-		<file src="WebP.Touch/WebP.Touch/bin/Release/WebP.Touch.xml" target="lib/net7.0-ios16.1/WebP.Touch.xml" />
+        <file src="WebP.Touch/WebP.Touch/bin/Release/net8.0-ios/**/*" target="lib/net8.0-ios17.2" />
+        <file src="WebP.Mac/WebP.Mac/bin/Release/net8.0-macos/**/*" target="lib/net8.0-macos14.2" />
+		<!-- <file src="WebP.Touch/WebP.Touch/bin/Release/net7.0-ios/WebP.Touch.dll" target="lib/net7.0-ios16.1/WebP.Touch.dll" />
+		<file src="WebP.Touch/WebP.Touch/bin/Release/WebP.Touch.xml" target="lib/net7.0-ios16.1/WebP.Touch.xml" /> -->
 		<!--Mac-->
-		<file src="WebP.Mac/WebP.Mac/bin/Release/net7.0-macos/WebP.Mac.dll" target="lib/net7.0-macos13.0/WebP.Mac.dll" />
+		<!-- <file src="WebP.Mac/WebP.Mac/bin/Release/net7.0-macos/WebP.Mac.dll" target="lib/net7.0-macos13.0/WebP.Mac.dll" /> -->
 		<!-- <file src="WebP.Mac/WebP.Mac/bin/Release/WebP.Mac.xml" target="lib/Xamarin.Mac20/WebP.Mac.xml" />         -->
 	</files>
 </package>

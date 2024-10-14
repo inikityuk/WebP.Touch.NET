@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6540016E1FDAC16100BC697B /* WebPDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6540016C1FDAC16100BC697B /* WebPDecoder.h */; };
 		6540016F1FDAC16100BC697B /* WebPDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6540016D1FDAC16100BC697B /* WebPDecoder.m */; };
-		654001721FDAC1B200BC697B /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654001711FDAC1B200BC697B /* WebP.framework */; };
 		654001741FDAC20200BC697B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654001731FDAC20200BC697B /* Foundation.framework */; };
 		654001761FDAC21200BC697B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654001751FDAC21200BC697B /* CoreGraphics.framework */; };
 		654001781FDAC25900BC697B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654001771FDAC25900BC697B /* AppKit.framework */; };
 		6540017B1FDAC57700BC697B /* decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 654001791FDAC57600BC697B /* decode.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6540017C1FDAC57700BC697B /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 6540017A1FDAC57600BC697B /* types.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		86F985602CBCCA5B00F8DDB5 /* libwebp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F9855F2CBCCA5B00F8DDB5 /* libwebp.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +27,7 @@
 		654001771FDAC25900BC697B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		654001791FDAC57600BC697B /* decode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = decode.h; path = WebPWrapper/WebP.framework/Headers/decode.h; sourceTree = "<group>"; };
 		6540017A1FDAC57600BC697B /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = types.h; path = WebPWrapper/WebP.framework/Headers/types.h; sourceTree = "<group>"; };
+		86F9855F2CBCCA5B00F8DDB5 /* libwebp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libwebp.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,9 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				654001721FDAC1B200BC697B /* WebP.framework in Frameworks */,
 				654001741FDAC20200BC697B /* Foundation.framework in Frameworks */,
 				654001761FDAC21200BC697B /* CoreGraphics.framework in Frameworks */,
+				86F985602CBCCA5B00F8DDB5 /* libwebp.xcframework in Frameworks */,
 				654001781FDAC25900BC697B /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +68,7 @@
 		654001701FDAC1B200BC697B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				86F9855F2CBCCA5B00F8DDB5 /* libwebp.xcframework */,
 				654001711FDAC1B200BC697B /* WebP.framework */,
 				654001771FDAC25900BC697B /* AppKit.framework */,
 				654001751FDAC21200BC697B /* CoreGraphics.framework */,
@@ -264,6 +266,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebPWrapper",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -277,6 +284,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/WebPWrapper",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

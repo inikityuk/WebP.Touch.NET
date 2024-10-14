@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-macos</TargetFramework>
+    <TargetFramework>net8.0-macos</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
@@ -9,35 +9,25 @@
     <AssemblyName>WebP.Mac</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <CreatePackage>false</CreatePackage>
     <UseSGen>false</UseSGen>
     <LinkMode>None</LinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <CreatePackage>false</CreatePackage>
     <UseSGen>false</UseSGen>
     <LinkMode>None</LinkMode>
   </PropertyGroup>
-  <ItemGroup>
+   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
   </ItemGroup>
+
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libWebPWrapper.a" />
-    <ObjcBindingNativeLibrary Include="WebP.a" />
+    <NativeReference Include="libWebPWrapper.xcframework">
+      <Kind>Static</Kind>
+      <SmartLink>True</SmartLink>
+      <ForceLoad>True</ForceLoad>
+    </NativeReference>
   </ItemGroup>
 </Project>

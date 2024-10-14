@@ -1,10 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-macos</TargetFramework>
+    <TargetFramework>net8.0-macos</TargetFramework>
     <OutputType>Exe</OutputType>
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
-    <SupportedOSPlatformVersion>10.14</SupportedOSPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <CreatePackage>false</CreatePackage>
@@ -20,6 +19,6 @@
     <LinkMode>None</LinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WebP.Mac\WebP.Mac\WebP.Mac.csproj" />
+    <ProjectReference Include="..\WebP.Mac\WebP.Mac.csproj" />
   </ItemGroup>
 </Project>
